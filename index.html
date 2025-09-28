@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <link rel="stylesheet" href="style.css" />
+  <title>To do List</title>
+</head>
+<body>
+  <header>
+    <div class="todo">
+      <h1>To do List:</h1>
+      <p>Adicione uma tarefa a lista.</p>
+    </div>
+  </header>
+
+  <main>
+    <section class="form">
+      <form id="taskForm">
+        <input type="text" name="task" id="task" placeholder="Digite sua tarefa..." />
+        <button type="submit">Adicionar</button>
+      </form>
+    </section>
+
+    <section class="list">
+      <ul id="taskList">
+        <!-- Observe os data-action e type="button" adicionados abaixo -->
+        <li>Ir ao supermercado <button type="button" data-action="concluir">Concluir</button> <button type="button" data-action="excluir">Excluir</button></li>
+        <li>Fazer tarefa de casa <button type="button" data-action="concluir">Concluir</button> <button type="button" data-action="excluir">Excluir</button></li>
+        <li>Reunião às 09:30 <button type="button" data-action="concluir">Concluir</button> <button type="button" data-action="excluir">Excluir</button></li>
+        <li>Estudar programação <button type="button" data-action="concluir">Concluir</button> <button type="button" data-action="excluir">Excluir</button></li>
+        <!-- ... resto das tarefas ... -->
+      </ul>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
